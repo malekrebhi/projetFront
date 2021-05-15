@@ -1,0 +1,43 @@
+<h2 style="margin-top:50px;">Personnel List</h2>
+<div style="overflow-x:auto;">
+<table class="table table-striped table-dark"  style="margin-top:20px;" >
+    <thead>
+        <tr>
+            <th>Id_Personnel</th>
+            <th>CIN_Personnel</th>
+            <th>Nom_Personnel</th>
+            <th>Prenom_Personnel</th>
+            <th>Adresse_Personnel</th>
+            <th>DateNaiss_Personnel</th>
+            <th>Tel_Personnel</th>
+            <th>Horaire_Personnel</th>
+            <th>Salaire_Personnel</th>
+            <th>Centre</th>
+            <th>Actions</th>
+         
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let personnel of personnels">
+           
+            <td>{{personnel.idPersonnel}}</td>
+            <td>{{personnel.CIN_P}}</td>
+            <td>{{personnel.nom_P}}</td>
+            <td>{{personnel.prenom_P}}</td>
+            <td>{{personnel.adresse_P}}</td>
+            <td>{{personnel.dateNaiss_P}}</td>
+            <td>{{personnel.tel_P}}</td>
+            <td>{{personnel.horaire_P}}</td>
+            <td>{{personnel.salaire_P}}</td>
+            <td>{{personnel.centre}}</td>
+            <td>
+                <button (click)="updatePersonnel(personnel.idPersonnel)" class="btn btn-info">Update</button>
+                <button (click)="deletePersonnel(personnel.idPersonnel)" class="btn btn-danger" style="margin-left: 100px;">Delete</button>
+
+            </td>
+           
+
+        </tr>
+    </tbody>
+</table>
+</div>

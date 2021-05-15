@@ -1,0 +1,50 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create Personnel</h3>
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="form-group">
+            <label style="padding-top: 1px;" >Id_Personnel</label>
+            <div class="col-sm-10"><input type="text" class="form-control" id="idPersonnel" [(ngModel)]= "personnel.idPersonnel" name="idPersonnel" ></div>
+        </div>
+        <div class="form-group">
+            <label >Cin Personnel</label>
+            <div class="col-sm-10"><input type="text" class="form-control" id="CIN_P" [(ngModel)]= "personnel.CIN_P" name="CIN_P" ></div>
+        </div>
+        <div class="form-group">
+            <label >Nom Personnel</label>
+            <div class="col-sm-10"><input  type="text" class="form-control" id="nom_P" [(ngModel)]= "personnel.nom_P" name="nom_P" ></div> 
+        </div>
+        <div class="form-group">
+            <label>Prenom Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="prenom_P" [(ngModel)]= "personnel.prenom_P" name="prenom_P" ></div>
+        </div>
+        <div class="form-group">
+            <label >Adresse Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="adresse_P" [(ngModel)]= "personnel.adresse_P" name="adresse_P" ></div>
+        </div>
+        <div class="form-group">
+            <label  >DateNaissance Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="dateNaiss_P" [(ngModel)]= "personnel.dateNaiss_P" name="dateNaiss_P" ></div>
+        </div>
+        <div class="form-group">
+            <label >Telephone Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="tel_P" [(ngModel)]= "personnel.tel_P" name="tel_P" ></div>
+        </div>
+        <div class="form-group">
+            <label  >Horaire Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="horaire_P" [(ngModel)]= "personnel.horaire_P" name="horaire_P" ></div>
+        </div>
+        <div class="form-group">
+            <label  >Salaire Personnel</label>
+            <div  class="col-sm-10"><input type="text" class="form-control" id="salaire_P" [(ngModel)]= "personnel.salaire_P" name="salaire_P" ></div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="cgu" required>
+              <label class="form-check-label" for="cgu">J'accepte les conditions générales d'utilisation </label>
+              <div class="invalid-feedback">Vous devez accepter les CGU pour continuer</div>
+            </div>
+        </div>
+        <button class="btn btn-success" type="submit"  >Submit</button>
+    </form>
+    </div>

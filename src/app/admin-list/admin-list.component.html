@@ -1,0 +1,38 @@
+<h2 style="margin-top:60px;">Admins List</h2>
+<table   class="table table-striped table-dark"  style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>Id_Admin</th>
+            <th>CIN_Admin</th>
+            <th>Nom_Admin</th>
+            <th>Prenom_Admin</th>
+            <th>Adresse_Admin</th>
+            <th>DateNaiss_Admin</th>
+            <th>Tel_A</th>
+            <th>Matricule</th>
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let admin of admins">
+         
+            <td>{{admin.idAdmin}}</td>
+            <td>{{admin.CIN_A}}</td>
+            <td>{{admin.nom_A}}</td>
+            <td>{{admin.prenom_A}}</td>
+            <td>{{admin.adresse_A}}</td>
+            <td>{{admin.dateNaiss_A}}</td>
+            <td>{{admin.tel_A}}</td>
+            <td>{{admin.matricule}}</td>
+            <td>
+                <button (click)="updateAdmin(admin.idAdmin)" class="btn btn-info">Update</button>
+                <button (click)="deleteAdmin(admin.idAdmin)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                <button (click)="adminDetails(admin.idAdmin)" class="btn btn-secondary" style="margin-left: 10px;">View</button>
+
+            </td>
+            
+
+        </tr>
+    </tbody>
+</table>
