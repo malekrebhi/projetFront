@@ -7,7 +7,6 @@
     height: 50px;
     background-color: green;
     text-align: center;
-
     color: white;
     
 }
@@ -21,18 +20,21 @@
 }
 
 #right {
-   padding-left: 450px;
+   padding-left: 440px;
    padding-right: 3px;
-   padding-top: 10px;
+   padding-top: 20px;
 }
 
 #left{
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-top: 20px;
 }
 
 #title{
     padding-left: 310px;
     color: white;
+    padding-top: 15px;
+ 
 
 
 }
